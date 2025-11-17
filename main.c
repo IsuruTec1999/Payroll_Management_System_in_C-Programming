@@ -25,3 +25,20 @@ void print_report(void);
 void print_slip(void);
 void emp_menu(void);
 void exit_message(void);
+
+int main(int argc, char *argv[])
+{
+	char menuOpt;
+	int isExit = 0;
+	welcome_message();
+	if(argc > 1)
+	{
+
+
+		printf("%s : Start Up Error >>> ", argv[0]);
+		fflush(stdin);
+		getch();
+		return (EXIT_FAILURE);
+	}
+    
+}
