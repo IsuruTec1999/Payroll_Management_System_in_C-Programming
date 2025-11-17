@@ -40,5 +40,47 @@ int main(int argc, char *argv[])
 		getch();
 		return (EXIT_FAILURE);
 	}
-    
+    null();
+	do
+	{
+		main_menu();
+		fflush(stdin);
+		menuOpt = (char)getch();
+		switch(menuOpt)
+		{
+			case '1':
+			{
+				manage_employee();
+				break;
+			}
+			case '2':
+			{
+				print_report();
+				break;
+			}
+			case '3':
+			{
+				print_slip();
+				break;
+			}
+			case '4':
+			{
+				isExit = 1;
+				break;
+			}
+			default:
+			{
+
+				printf("Invalid Option!");
+				fflush(stdin);
+				getch();
+				break;
+			}
+		}
+
+	}while(isExit == 0);
+	exit_message();
+	fflush(stdin);
+	getch();
+    return (0);
 }
