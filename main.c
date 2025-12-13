@@ -7,7 +7,7 @@
 #define EMP_FILE "empdata.txt"
 #define TMP_FILE "tmpdata.txt"
  
-
+ 
 #define EPF_RATE 0.18
 #define ETF_RATE 0.03
 #define GEN_TIME (8 * 20)
